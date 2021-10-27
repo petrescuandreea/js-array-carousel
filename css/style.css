@@ -1,0 +1,40 @@
+/* regole generali  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 50%;
+    background-color: crimson;
+    height: 300px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.items {
+    float: left;
+    width: 80%;
+    height: 100%;
+    background-color: cyan;
+}
+
+.thumbs {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: darkblue;
+}
+
+.thumb {
+    width: 100%;
+    height: calc(100% / 5);
+    background-color: chocolate;
+    border: 1px solid black;
+}
