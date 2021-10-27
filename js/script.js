@@ -33,8 +33,6 @@ const text = [
 // Selezione degli elementi utili 
 const itemsContainer = document.querySelector(".items");
 const thumbsContainer = document.querySelector(".thumbs");
-// const next = document.querySelector(".next");
-// console.log(next);
 
 let item = "";
 let thumb = "";
@@ -84,6 +82,12 @@ document.querySelector(".next").addEventListener("click",
 
         ++activePosition;
 
+        // Ciclo infinito 
+        // Se la classe attiva è l'ultima (quindi in posizione 5) torna da capo
+        if (activePosition ===5) {
+            activePosition = 0
+        }
+
         document.querySelector(".item.active").classList.remove("active");
         document.getElementsByClassName("item")[activePosition].classList.add("active");
 
@@ -109,3 +113,5 @@ document.querySelector(".prev").addEventListener("click",
     }
 
 );
+
+
