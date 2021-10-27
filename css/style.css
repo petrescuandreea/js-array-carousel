@@ -87,23 +87,33 @@ section {
     object-fit: cover;
 }
 
-.prev .fas , .next .fas{
+.prev , .next {
     background-color: lightslategray;
     border-radius: 50%;
     padding: 4px;
     margin: 10px 0;
+    z-index: 1;
 }
+
+.prev:hover , .next:hover {
+    cursor: pointer;
+}
+
 
 .prev {
     position: absolute;
     top: 0;
+    left: 40%;
 }
 
 .next {
     position: absolute;
     bottom: 0;
+    left: 40%;
 }
 
-.prev , .next {
+
+
+/* .prev , .next {
     margin-left: 45%;
-}
+} */
