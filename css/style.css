@@ -33,7 +33,6 @@ section {
     float: left;
     width: 80%;
     height: 100%;
-    background-color: cyan;
 }
 
 .item {
@@ -88,11 +87,11 @@ section {
 }
 
 .prev , .next {
-    background-color: lightslategray;
     border-radius: 50%;
-    padding: 4px;
+    padding: 4px 6px;
     margin: 10px 0;
     z-index: 1;
+    background-color: darkgray;
 }
 
 .prev:hover , .next:hover {
@@ -111,9 +110,3 @@ section {
     bottom: 0;
     left: 40%;
 }
-
-
-
-/* .prev , .next {
-    margin-left: 45%;
-} */
